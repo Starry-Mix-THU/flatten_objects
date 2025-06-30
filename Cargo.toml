@@ -1,8 +1,12 @@
 [package]
 name = "flatten_objects"
-version = "0.2.3"
+version = "0.2.4"
 edition = "2024"
-authors = ["Yuekai Jia <equation618@gmail.com>"]
+authors = [
+    "Yuekai Jia <equation618@gmail.com>",
+    "Asakura Mizu <asakuramizu111@gmail.com>",
+    "Su Mingxian <aarkegz@gmail.com>",
+]
 description = "A container that stores numbered objects. Each object can be assigned with a unique ID."
 license = "GPL-3.0-or-later OR Apache-2.0 OR MulanPSL-2.0"
 homepage = "https://github.com/arceos-org/arceos"
