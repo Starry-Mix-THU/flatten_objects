@@ -18,3 +18,4 @@ rust-version = "1.85"
 
 [dependencies]
 bitmaps = { version = "3.2", default-features = false }
+log = "0.4.21"

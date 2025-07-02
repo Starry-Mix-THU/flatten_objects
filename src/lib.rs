@@ -74,11 +74,10 @@ where
     ///
     /// let objects = FlattenObjects::<u32, 1025>::new();
     /// ```
-    pub const fn new() -> Self {
+    pub fn new() -> Self {
         Self {
             objects: [const { MaybeUninit::uninit() }; CAP],
-            // SAFETY: zero initialization is OK for `id_bitmap` (an array of integers).
-            id_bitmap: unsafe { MaybeUninit::zeroed().assume_init() },
+            id_bitmap: Bitmap::new(),
             count: 0,
         }
     }
